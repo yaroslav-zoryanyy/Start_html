@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw9.2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        form{
+            width: 100%;
+        }
+        form span{
+            display: block;
+            margin-top: 15px ;
+            color: gray;
+        }
+        input{
+            width: 100%;
+            padding: 7px 5px;
+            display: block;
+        }
+        a{
+            text-decoration: none;
+        }
+        .section-top{
+            width: 348px;
+            height: 380px;
+            padding: 10px 40px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            border: 1px solid gray;
+            margin-bottom: 10px;
+        }
+        .section-top img{
+            width: 200px;
+            margin: 20px 0;
+        }
+        .login{
+            margin-bottom: 10px;
+        }
+        .password{
+            margin-bottom: 20px;
+        }
+        .btn{
+            background-color: #659ff6;
+            color: white;
+            border-radius: 10px;
+            border: none;
+        }
+        .social{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0 5px;
+        }
+        .social img{
+            width: 16px;
+            height: 16px;
+        }
+        .section-bottom{
+            width: 348px;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="section-top">
+            <form>
+                <img src="img/logo.png" alt="instagram logo">
+                <input class="login" type="text" name="user name" placeholder="Номер телефону, ім'я користувача або електронну адресу" required>
+                <input class="password" type="password" name="password" placeholder="Пароль" required>
+                <input class="btn" type="submit" value="Увійти">
+                <span>АБО</span>
+                <div class="social">
+                    <img src="img/facebook.png" alt="facebook logo">
+                    <a href="#">Увійти через Facebook</a>
+                </div>
+                <a href="#">Забули пароль?</a>
+            </form>
+        </div>
+        <div class="section-bottom">
+            <span>Не маєте облікового запису?</span>
+            <a href="#">Зареєструйтеся</a>
+        </div>
+    </section>
+</body>
+</html>

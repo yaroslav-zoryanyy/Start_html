@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw9.1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #469a9a;
+        }
+        .input{
+            display: block;
+            width: 100%;
+            font-size: 16px;
+            padding: 10px 5px;
+            margin-bottom: 30px;
+        }
+        .container{
+            width: 33.3vw;
+            height: 50vh;
+            border-radius: 15px;
+            background-color: white;
+        }
+        .top{
+            padding: 25px 50px;
+            background-color: #d5e8e8;
+            text-align: center;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .top h2{
+            font-weight: 400;
+            font-size: 30px;
+        }
+        .bottom{
+            padding: 20px 60px 120px 60px;
+        }
+        .bottom-inner{
+            justify-content: space-between;
+            display:flex;
+        }
+        .btn{
+            padding: 5px 25px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="top">
+            <h2>Вхід в особистий кабінет</h2>
+        </div>
+        <div class="bottom">
+            <form>
+                <input class="input" type="email" name="email" placeholder="Логін або email" required>
+                <input class="input" type="password" name="password" placeholder="Пароль" required>
+                <div class="bottom-inner">
+                    <label for="save">Запам'ятати мене <input type="checkbox" name="save me" id="save"></label>
+                    <input class="btn" type="submit" value="Вхід" name="log in">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>
