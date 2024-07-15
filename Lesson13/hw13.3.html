@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw13.3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0 132px;
+        }
+        .card{
+            width: 319px;
+            height: 492px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 32px;
+            border: 4px solid #554C4C;
+            background: rgba(217, 217, 217, 0.30);
+            position: relative;
+        }
+        .card h2{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-weight: 400;
+            margin-bottom: 4px;
+        }
+        .card p{
+            width: 250px;
+            color: #000;
+            text-align: center;
+            font-family: Inter;
+            font-size: 20px;
+        }
+        .circle{
+            border-radius: 50%;
+            border: 4px solid #554C4C;
+            background-color: white;
+            position: absolute;
+            top: -50px;
+            z-index: 1;
+        }
+        .circle img{
+            padding: 10px 20px;
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <h4>Lorem</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="circle">
+                <img src="images/circle-img1.png" alt="game logo">
+            </div>
+        </div>
+        <div class="card">
+            <h4>Lorem</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="circle">
+                <img src="images/circle-img2.png" alt="game logo">
+            </div>
+        </div>
+        <div class="card">
+            <h4>Lorem</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="circle">
+                <img src="images/circle-img3.png" alt="game logo">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

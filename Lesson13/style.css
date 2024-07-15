@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+header{
+    width: 100vw;
+    height: 13vh;
+    background: #FFF;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    list-style-type: none;
+    padding: 46px 0;
+}
+header ul img{
+    width: 106px;
+    height: 39px;
+}
+header ul a{
+    text-decoration: none;
+    color: #000;
+}
+main{
+    width: 100vw;
+    background: #FBF6F3;
+}
+.Nike{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:  0 42px;
+    padding: 67px 315px 172px 165px;
+}
+.left img{
+    width: 581px;
+    height: 653px;
+}
+.right{
+    width: 350px;
+}
+.right h2{
+    font-size: 48px;
+    margin-bottom: 37px;
+}
+.price{
+    color: #AD0306;
+    font-size: 36px;
+}
+.size{
+    margin-top: 37px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 27px;
+    font-size: 13px;
+}
+.NotFaund{
+    color: #A19FA0;
+}
+.use{
+    color: #A90102;
+}
+.right p{
+    margin-top:48px;
+}
+.showing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 212px 170px 308px;
+    background-color: white;
+}
+.showing h2{
+    width: 472px;
+    color: #142823;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 57px;
+}
+.showing_cards{
+    display: flex;
+    gap: 0 128px;
+}
+.card{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 0;
+    border-radius: 32px;
+    box-shadow: 0px 4px 20px 0px rgba(139, 139, 139, 0.10);
+}
+.card p{
+    color: #282828;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+}
+.card span{
+    color:#106FDF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.card:nth-child(2) span{
+    color: #DD152D;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+}
+.pop-up{
+    position: absolute;
+    top: 0%;
+}

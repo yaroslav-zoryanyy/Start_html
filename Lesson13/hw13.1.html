@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw13.1</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        video{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            object-fit: cover;
+        }
+        .container{
+            width: 1100px;
+            margin: 0 auto;
+        }
+        .section_top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .section_top-right{
+            display: flex;
+            align-items: center;
+            gap:  0 10px;
+        }
+        .section_top-right img{
+            width: 38px;
+            height: 38px;
+            border-radius: 5px;
+        }
+        .section_top-right span{
+            color: white;
+            font-size: 24px;
+        }
+        .section_top-left,
+        .section_top-left ul{
+            display: flex;
+            align-items: center;
+            gap: 0 20px;
+        }
+        .section_top-left ul{
+            list-style-type: none;
+            color: white;
+            font-size: 16px;
+        }
+        .section_top-left button{
+            padding: 12px 7px;
+            border: none;
+            font-weight: 600;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+        }
+        .section_bottom{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        .section_bottom h2{
+            color: white;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        .section_bottom-search{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px 8px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            background-color: white;
+            position: relative;
+        }
+        .search_btn{
+            display: flex;
+            align-items: center;
+            padding: 7px 5px;
+            gap: 0 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: gray;
+            color: black;
+            font-size: 16px;
+        }
+        .section_bottom-search input{
+            width: 100%;
+            padding: 7px 5px;
+            border: none;
+        }
+        .section_bottom-search>span{
+            position: absolute;
+            top: 25%;
+            right: 4%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="section_top">
+                <div class="section_top-right">
+                    <img src="images/Pexels.png" alt="Pexels logo">
+                    <span>Pexels</span>
+                </div>
+                <div class="section_top-left">
+                    <ul>
+                        <li>Пошук</li>
+                        <li>Ліцензія</li>
+                        <li>Завантаження</li>
+                        <li>...</li>
+                    </ul>
+                    <button>Реєстрація</button>
+                </div>
+            </div>
+            <div class="section_bottom">
+                <h2>Найкрвщі безкоштовні стокові відео від спільноти pexels.</h2>
+                <div class="section_bottom-search">
+                    <button class="search_btn">
+                        <span class="material-symbols-outlined">photo_camera</span>
+                        <span>Фото</span>
+                    </button>
+                    <input type="search" placeholder="Пошук безкоштовних відео">
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+            </div>
+        </div>
+        <video src="media/video-bg.mp4" loop autoplay muted></video>
+    </section>
+</body>
+</html>
