@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+header,
+footer{
+    background-color: #ababab;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "section1 section1" "section2 section3";
+}
+.section1 {
+    grid-area: section1;
+    background-color: #6e6767;
+}
+.section2{
+    grid-area: section2;
+    background-color: #494949;
+}
+.section3{
+    grid-area: section3;
+    background-color: #727272;
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw16.1.4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 3fr 1fr;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 28px;
+        }
+        header,
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ababab;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+             "section1 wrap"
+             "section2 wrap"
+             "section3 wrap"
+        ;
+        }
+        .section1{
+            grid-area: section1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #c4c4c4;
+        }
+        .section2{
+            grid-area: section2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #5b3030;
+        }
+        .section3{
+            grid-area: section3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #460808;
+        }
+        .wrap{
+            grid-area: wrap;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .spam1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #413030;
+        }
+        .spam2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d78a8a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span>Header</span>
+    </header>
+    <main>
+        <section class="section1">
+            <span>Content-1</span>
+        </section>
+        <section class="section2">
+            <span>Content-2</span>
+        </section>
+        <section class="section3">
+            <span>Content-3</span>
+        </section>
+        <div class="wrap">
+            <div class="spam1">
+                <span>spam-1</span>
+            </div>
+            <div class="spam2">
+                <span>spam-2</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>footer</span>
+    </footer>
+</body>
+</html>

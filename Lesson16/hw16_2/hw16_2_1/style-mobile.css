@@ -1,0 +1,9 @@
+@media screen and (max-width: 480px){
+    body{
+        grid-template-rows: 1fr 4fr;
+    }
+    main{
+        grid-template-columns:1fr ;
+        grid-template-rows: 3fr 1fr ;
+    }
+}

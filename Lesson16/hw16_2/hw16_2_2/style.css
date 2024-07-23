@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    color: white;
+    font-size: 28px;
+}
+header{
+    background-color: #1a8def;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas:
+    "section1 section1 section1 section5"
+    "section2 section3 section4 section5"
+;
+}
+.section1{
+    background-color: yellow;
+    grid-area: section1;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2{
+    background-color: #da0d32;
+    grid-area: section2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3{
+    background-color: #c86fff;
+    grid-area: section3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section4{
+    background-color: #63ff00;
+    grid-area: section4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section5{
+    background-color: #da5c0d;
+    grid-area: section5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
